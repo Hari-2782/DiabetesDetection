@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,400&display=swap');
+        body {
+            background: linear-gradient(135deg, #f5e9da 0%, #e4d3b2 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .result-container {
+            background: #fffbe9;
+            border-radius: 16px;
+            border: 2px solid #bfa046;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15), 0 1.5px 0 #bfa046 inset;
+            padding: 36px 32px 28px 32px;
+            min-width: 320px;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #6b4f1d;
+            margin-bottom: 18px;
+            text-shadow: 0 2px 0 #e6c97a;
+        }
+        .result {
+            font-size: 1.3rem;
+            color: #bfa046;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 24px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 24px;
+            background: linear-gradient(90deg, #bfa046 0%, #e6c97a 100%);
+            color: #fffbe9;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+            border: none;
+            margin-top: 10px;
+        }
+        a:hover {
+            background: linear-gradient(90deg, #e6c97a 0%, #bfa046 100%);
+            color: #6b4f1d;
+        }
+        @media (max-width: 600px) {
+            .result-container {
+                padding: 18px 8px 16px 8px;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+        <div class="result">The prediction is: {{ result }}</div>
+        <a href="{% url 'index' %}">Go Back</a>
+    </div>
+</body>
+</html>
