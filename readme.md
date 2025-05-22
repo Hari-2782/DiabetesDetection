@@ -13,8 +13,7 @@ This project is an enterprise-level web application for predicting diabetes usin
 
 1. **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd Fdm_proj-main
+    git clone https://github.com/Hari-2782/diabetes-prediction.git
     ```
 
 2. **Create and activate a virtual environment (optional but recommended):**
