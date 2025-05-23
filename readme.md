@@ -57,6 +57,5 @@ The model is trained using scikit-learn and saved as `final_model.pkl`. It uses 
 
 This project is licensed under the MIT License.
 
----
 
-**For any questions or contributions, please open an issue or submit a pull request.**
+
